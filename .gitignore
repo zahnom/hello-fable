@@ -292,3 +292,6 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+
+# Apple
+.DS_Store
