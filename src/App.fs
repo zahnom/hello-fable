@@ -2,6 +2,7 @@ module App
 
 open Browser.Dom
 
+
 // Mutable variable to count the number of times we clicked the button
 let mutable count = 0
 
@@ -10,5 +11,5 @@ let myButton = document.querySelector(".my-button") :?> Browser.Types.HTMLButton
 
 // Register our listener
 myButton.onclick <- fun _ ->
-    count <- count + 1
-    myButton.innerText <- sprintf "You clicked: %i time(s)" count
+    let text = HelloJavascript.lib.helloJavascript()
+    myButton.innerText <- sprintf "You clicked: %s" text
